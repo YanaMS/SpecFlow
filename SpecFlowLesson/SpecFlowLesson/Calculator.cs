@@ -8,9 +8,15 @@ namespace SpecFlowLesson
 {
     public class Calculator
     {
+
+
         public int Add(int argument1, int argument2)
         {
             return argument1 + argument2;
+        }
+        public int Multiply(int argument, int multiplier)
+        {
+            return argument*multiplier;
         }
     }
 }
