@@ -20,7 +20,6 @@ namespace SpecFlowLesson
         }
 
         [Given(@"I have entered (.*) into the calculator")]
-        [When(@"I have entered (.*) into the calculator")]
         public void GivenIHaveEnteredIntoTheCalculator(int number)
         {
             if (!_context.ContainsKey("numbers"))
@@ -30,6 +29,22 @@ namespace SpecFlowLesson
             var numbers = (List<int>)_context["numbers"];
             numbers.Add(number);
         }
+
+        [When(@"I have entered (.*) into the calculator")]
+        public void WhenIHaveEnteredIntoTheCalculator(int number)
+        {
+            var numbers = (List<int>)_context["numbers"];
+
+            if (_context.ContainsKey("result"))
+            {
+                var result = (int)_context["result"];
+                numbers.Clear();
+                numbers.Add(result);
+            }
+
+            numbers.Add(number);
+        }
+
 
 
         [When(@"I press add")]
@@ -43,10 +58,9 @@ namespace SpecFlowLesson
         [When(@"Press Multiply")]
         public void WhenPressMultiply()
         {
-            var multiplier = (List<int>)_context["numbers"];
-            var argument = (int)_context["result"];
-            var result = _calculator.Multiply(argument, multiplier[2]);
-           _context["result"] = result;
+            var numbers = (List<int>)_context["numbers"];
+            var result = _calculator.Multiply(numbers.First(), numbers.Last());
+            _context["result"] = result;
 
         }
 
