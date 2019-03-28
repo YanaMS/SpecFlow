@@ -1,9 +1,11 @@
-﻿using System;
+﻿using SpecFlowLesson.DataSource;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TechTalk.SpecFlow;
+using TechTalk.SpecFlow.Assist;
 
 namespace SpecFlowLesson
 {
@@ -63,6 +65,14 @@ namespace SpecFlowLesson
             _context["result"] = result;
 
         }
+
+        [Given(@"I have entered values into the calculator as follow")]
+        public void GivenIHaveEnteredValuesIntoTheCalculatorAsFollow(Table table)
+        {
+            var numbers = table.CreateSet<NumbersTable>();
+            _context["numbers"] = numbers.Select(item => item.Number).ToList();
+        }
+
 
 
 

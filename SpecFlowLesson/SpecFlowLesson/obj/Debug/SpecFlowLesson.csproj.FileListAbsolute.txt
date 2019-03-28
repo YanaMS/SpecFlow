@@ -35,3 +35,7 @@ C:\Users\yana.sukharieva\Documents\Stady_Projects\study_projects\SpecFlowLesson\
 C:\Users\yana.sukharieva\Documents\Stady_Projects\study_projects\SpecFlowLesson\SpecFlowLesson\SpecFlowLesson\obj\Debug\SpecFlowLesson.csproj.CopyComplete
 C:\Users\yana.sukharieva\Documents\Stady_Projects\study_projects\SpecFlowLesson\SpecFlowLesson\SpecFlowLesson\obj\Debug\SpecFlowLesson.dll
 C:\Users\yana.sukharieva\Documents\Stady_Projects\study_projects\SpecFlowLesson\SpecFlowLesson\SpecFlowLesson\obj\Debug\SpecFlowLesson.pdb
+C:\Users\yana.sukharieva\Documents\Stady_Projects\study_projects\SpecFlowLesson\SpecFlowLesson\SpecFlowLesson\bin\Debug\nlog.config
+C:\Users\yana.sukharieva\Documents\Stady_Projects\study_projects\SpecFlowLesson\SpecFlowLesson\SpecFlowLesson\bin\Debug\NLog.dll
+C:\Users\yana.sukharieva\Documents\Stady_Projects\study_projects\SpecFlowLesson\SpecFlowLesson\SpecFlowLesson\bin\Debug\NLog.xml
+C:\Users\yana.sukharieva\Documents\Stady_Projects\study_projects\SpecFlowLesson\SpecFlowLesson\SpecFlowLesson\obj\Debug\SpecFlowLesson.csprojAssemblyReference.cache
