@@ -1,0 +1,20 @@
+2019-03-28 18:31:45.7164 DEBUG Add two numbers
+2019-03-28 18:31:45.7948 INFO Step - I have entered values into the calculator as follow
+2019-03-28 18:31:45.8307 INFO Step - I press add
+2019-03-28 18:31:45.8347 INFO Step - the result should be 80 on the screen
+2019-03-28 18:31:45.8501 DEBUG Test'Add two numbers' is succesfull
+2019-03-28 18:31:45.8501 DEBUG Add two numbers and multiply
+2019-03-28 18:31:45.8501 INFO Step - I have entered 50 into the calculator
+2019-03-28 18:31:45.8501 INFO Step - I have entered 70 into the calculator
+2019-03-28 18:31:45.8501 INFO Step - I press add
+2019-03-28 18:31:45.8501 INFO Step - I have entered 2 into the calculator
+2019-03-28 18:31:45.8501 INFO Step - Press Multiply
+2019-03-28 18:31:45.8636 INFO Step - the result should be 240 on the screen
+2019-03-28 18:31:45.8636 DEBUG Test'Add two numbers and multiply' is succesfull
+2019-03-28 18:32:24.7228 DEBUG Add two numbers
+2019-03-28 18:36:03.1433 INFO Step - I have entered values into the calculator as follow
+2019-03-28 18:36:06.3282 INFO Step - I press add
+2019-03-28 18:36:08.2320 INFO Step - the result should be 80 on the screen
+2019-03-28 18:36:08.2564 DEBUG Test'Add two numbers' is succesfull
+2019-03-28 18:36:08.2564 DEBUG Add two numbers and multiply
+2019-03-28 18:36:10.6948 INFO Step - I have entered 50 into the calculator

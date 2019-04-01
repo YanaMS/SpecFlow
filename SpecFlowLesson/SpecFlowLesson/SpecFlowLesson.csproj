@@ -67,6 +67,11 @@
   <ItemGroup>
     <Compile Include="Calculator.cs" />
     <Compile Include="DataSource\NumbersTable.cs" />
+    <Compile Include="Features\OneByOne.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OneByOne.feature</DependentUpon>
+    </Compile>
     <Compile Include="Hooks\TestHooks.cs" />
     <Compile Include="StepDefinitions\GeneralSteps.cs" />
     <Compile Include="Features\LessonFeature.feature.cs">
@@ -86,6 +91,10 @@
     <Content Include="nlog.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Features\OneByOne.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>OneByOne.feature.cs</LastGenOutput>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

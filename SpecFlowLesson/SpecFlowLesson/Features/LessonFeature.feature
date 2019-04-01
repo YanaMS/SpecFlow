@@ -15,4 +15,4 @@ Scenario: Add two numbers
 	| 50     |
 	| 30     |
 	When I press add
-	Then the result should be 90 on the screen
+	Then the result should be 80 on the screen

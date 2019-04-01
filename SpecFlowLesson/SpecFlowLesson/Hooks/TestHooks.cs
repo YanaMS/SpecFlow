@@ -38,18 +38,10 @@ namespace SpecFlowLesson.Hooks
             }
         }
 
-        [AfterStep]
+        [BeforeStep]
         public void AfterStep(ScenarioContext context)
         {
-            if (context.ScenarioExecutionStatus != ScenarioExecutionStatus.OK)
-            {
-                _logger.Error($"Step '{context.StepContext.StepInfo}' failed: {context.TestError}");
-            }
-            else
-            {
-                _logger.Debug($"Test'{context.StepContext.StepInfo}' is succesfull");
-            }
-
+            _logger.Info($"Step - {context.StepContext.StepInfo.Text}");
 
         }
     }

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SpecFlowLesson.Features;
 using TechTalk.SpecFlow;
 using TechTalk.SpecFlow.Assist;
 
@@ -72,6 +73,18 @@ namespace SpecFlowLesson
             var numbers = table.CreateSet<NumbersTable>();
             _context["numbers"] = numbers.Select(item => item.Number).ToList();
         }
+
+        [Scope(Tag = "OneByOne")]
+        [Given(@"I have entered values into the calculator as follow")]
+        public void GivenIHaveEnteredValuesIntoTheCalculatorAsFollowOneByOne(Table table)
+        {
+            var numberTable = table.CreateInstance<NumbersTable>();
+            GivenIHaveEnteredIntoTheCalculator(numberTable.Number);          
+        }
+
+
+
+
 
 
 
